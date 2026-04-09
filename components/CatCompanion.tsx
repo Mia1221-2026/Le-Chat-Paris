@@ -1,7 +1,8 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useRef } from "react";
 import Image from "next/image";
+import { useSession } from "@/lib/sessionStore";
 
 const TOUCH_MAP: Record<string, string> = {
   "/chat/chat-bai.png":     "/chat/chat-bai-touch.png",
@@ -18,14 +19,10 @@ interface CatCompanionProps {
 }
 
 export default function CatCompanion({ size = 50, opacity = 0.78 }: CatCompanionProps) {
-  const [defaultSrc, setDefaultSrc] = useState<string | null>(null);
+  const { profile } = useSession();
   const [touched, setTouched] = useState(false);
   // Ref guard — synchronous, avoids double-fire from touchstart + mousedown
   const activeRef = useRef(false);
-
-  useEffect(() => {
-    setDefaultSrc(localStorage.getItem("selectedCat") ?? "/chat/chat-kitty-1.png");
-  }, []);
 
   function handlePointerDown() {
     if (activeRef.current) return;
@@ -35,8 +32,7 @@ export default function CatCompanion({ size = 50, opacity = 0.78 }: CatCompanion
     setTimeout(() => { activeRef.current = false; }, 50);
   }
 
-  if (!defaultSrc) return null;
-
+  const defaultSrc = profile.selectedCat;
   const touchSrc = TOUCH_MAP[defaultSrc];
   const displaySrc = touched && touchSrc ? touchSrc : defaultSrc;
 
