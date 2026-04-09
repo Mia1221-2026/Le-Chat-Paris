@@ -65,9 +65,7 @@ It should feel like living.
 Belonging is not learned. It is lived.
 
 
-# -----------------------------
 # ↓ BELOW = FOR DEVELOPERS ONLY
-# -----------------------------
 
 ## ⚙️ Features (Technical)
 
@@ -78,11 +76,9 @@ Belonging is not learned. It is lived.
 - Edit → AI refine  
 - Calendar-based journal  
 
-
 ## 🧱 Tech Stack
 
 Next.js (App Router) · TypeScript · Tailwind CSS · OpenAI API
-
 
 ## 🛠 Running locally
 
