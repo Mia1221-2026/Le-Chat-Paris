@@ -1,23 +1,104 @@
 # Le Chat à Paris
 
-A language-learning journal app for people living in (or dreaming of) Paris. Capture everyday moments with a photo and caption, and the app writes a short diary entry in your target language — calibrated to your CEFR level. Review past memories from a calendar, listen to them read aloud, and edit entries with AI-assisted refinement.
-
-## Features
-
-- **Moment capture** — photo + caption → AI-generated first-person diary entry
-- **CEFR-aware writing** — output pitched to your level (A1 → C1)
-- **Text-to-speech** — OpenAI TTS reads your entries aloud in the target language
-- **Translation toggle** — read any entry in your native language on demand
-- **Edit & refine** — edit freely; saving triggers an AI polish pass
-- **Calendar review** — browse all saved memories by date
-
-## Tech stack
-
-Next.js (App Router) · TypeScript · Tailwind CSS · OpenAI API (GPT-4o mini + TTS)
+A gentle AI companion that transforms everyday moments into language, memory, and a sense of belonging.
 
 ---
 
-## Running locally
+## ✨ What is this?
+
+Le Chat à Paris is a multimodal AI experience designed for people adapting to a new city and language.
+
+Instead of learning through abstract exercises, you learn through your own life.
+
+Capture a moment.  
+Add a few words.  
+Let AI turn it into a story.
+
+---
+
+## 🌿 Why it exists
+
+Moving to a new city is not only about learning vocabulary.  
+It is about adapting to a new rhythm, a new environment, and a new sense of place.
+
+Most language tools focus on correctness.  
+Le Chat à Paris focuses on meaning.
+
+---
+
+## 🧠 How it works
+
+### 1. Capture a moment → AI transforms it into a story
+Take a photo and add a few words.  
+AI turns your moment into a story in your target language.
+
+---
+
+### 2. Understand your story
+Listen to it, or read it in English.  
+Everything is designed to help you understand naturally.
+
+---
+
+### 3. Build your personal journal
+Each moment is saved into your timeline.  
+Over time, it becomes your own story of living in a new place.
+
+---
+
+### 4. A quiet companion
+A cat stays with you throughout the experience.  
+A small, personal presence as you explore your new life.
+
+---
+
+## 🎬 Demo
+
+👉 https://demo.storylane.com/share/jhlo97t3ijvv
+
+---
+
+## 🌍 Impact
+
+This project supports people adapting to life in a new language environment — including international students, expats, and newcomers.
+
+It encourages a deeper form of immersion, helping users engage with their surroundings and build a sense of belonging.
+
+Over time, these moments can evolve into shared narratives — forming a foundation for community and collective storytelling.
+
+---
+
+## 🚀 Vision
+
+Language learning should not feel like studying.  
+It should feel like living.
+
+Belonging is not learned. It is lived.
+
+---
+
+# -----------------------------
+# ↓ BELOW = FOR DEVELOPERS ONLY
+# -----------------------------
+
+## ⚙️ Features (Technical)
+
+- Moment capture — photo + caption → AI-generated diary entry  
+- CEFR-aware writing (A1–C1)  
+- Text-to-speech playback  
+- Translation toggle  
+- Edit → AI refine  
+- Calendar-based journal  
+
+---
+
+## 🧱 Tech Stack
+
+Next.js (App Router) · TypeScript · Tailwind CSS · OpenAI API
+
+---
+
+## 🛠 Running locally
 
 ### 1. Clone and install
 
@@ -25,43 +106,3 @@ Next.js (App Router) · TypeScript · Tailwind CSS · OpenAI API (GPT-4o mini + 
 git clone <repo-url>
 cd le-chat-a-paris
 npm install
-```
-
-### 2. Set up environment variables
-
-```bash
-cp .env.example .env.local
-```
-
-Open `.env.local` and fill in your values (see [Environment variables](#environment-variables) below).
-
-### 3. Start the dev server
-
-```bash
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000).
-
----
-
-## Environment variables
-
-| Variable | Required | Description |
-|---|---|---|
-| `OPENAI_API_KEY` | Yes | Your OpenAI API key. Used server-side only — never exposed to the client. |
-| `MOCK_GENERATE` | No | Set to `true` to bypass all OpenAI calls and return static placeholder text. Useful for local UI work without spending API credits. Leave unset in production. |
-
-> **Security note**: `OPENAI_API_KEY` is read exclusively inside Next.js route handlers (`app/api/`). It is never referenced in any client component or sent to the browser.
-
----
-
-## Deploying to Vercel
-
-1. Push the repository to GitHub.
-2. Import the project on [vercel.com](https://vercel.com).
-3. In **Project Settings → Environment Variables**, add:
-   - `OPENAI_API_KEY` — your production OpenAI key (mark as **Secret**)
-4. Deploy. Vercel auto-detects Next.js — no build configuration needed.
-
-Do **not** set `MOCK_GENERATE` in the Vercel environment; omitting it is enough to keep it disabled.
