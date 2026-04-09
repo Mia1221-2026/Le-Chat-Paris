@@ -43,7 +43,7 @@ A small, personal presence as you explore your new life.
 
 ## 🎬 Demo
 
-👉 https://demo.storylane.com/share/jhlo97t3ijvv
+👉 Please click here to view the demo: https://demo.storylane.com/share/jhlo97t3ijvv
 <img width="8004" height="3348" alt="image" src="https://github.com/user-attachments/assets/332d12e1-9ad5-40e6-95dd-5c868ebf3d50" />
 
 
