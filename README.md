@@ -2,7 +2,6 @@
 
 A gentle AI companion that transforms everyday moments into language, memory, and a sense of belonging.
 
----
 
 ## ✨ What is this?
 
@@ -14,7 +13,6 @@ Capture a moment.
 Add a few words.  
 Let AI turn it into a story.
 
----
 
 ## 🌿 Why it exists
 
@@ -24,7 +22,6 @@ It is about adapting to a new rhythm, a new environment, and a new sense of plac
 Most language tools focus on correctness.  
 Le Chat à Paris focuses on meaning.
 
----
 
 ## 🧠 How it works
 
@@ -32,31 +29,23 @@ Le Chat à Paris focuses on meaning.
 Take a photo and add a few words.  
 AI turns your moment into a story in your target language.
 
----
-
 ### 2. Understand your story
 Listen to it, or read it in English.  
 Everything is designed to help you understand naturally.
-
----
 
 ### 3. Build your personal journal
 Each moment is saved into your timeline.  
 Over time, it becomes your own story of living in a new place.
 
----
-
 ### 4. A quiet companion
 A cat stays with you throughout the experience.  
 A small, personal presence as you explore your new life.
-
----
 
 ## 🎬 Demo
 
 👉 https://demo.storylane.com/share/jhlo97t3ijvv
 
----
+
 
 ## 🌍 Impact
 
@@ -66,7 +55,7 @@ It encourages a deeper form of immersion, helping users engage with their surrou
 
 Over time, these moments can evolve into shared narratives — forming a foundation for community and collective storytelling.
 
----
+
 
 ## 🚀 Vision
 
@@ -75,7 +64,6 @@ It should feel like living.
 
 Belonging is not learned. It is lived.
 
----
 
 # -----------------------------
 # ↓ BELOW = FOR DEVELOPERS ONLY
@@ -90,13 +78,11 @@ Belonging is not learned. It is lived.
 - Edit → AI refine  
 - Calendar-based journal  
 
----
 
 ## 🧱 Tech Stack
 
 Next.js (App Router) · TypeScript · Tailwind CSS · OpenAI API
 
----
 
 ## 🛠 Running locally
 
